@@ -1,0 +1,98 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;/*for all text*/
+    background-color: black;
+  }
+/*header*/
+nav {
+    display: flex;/*to separate the cam image , the button, and all the navbar items vertically*/
+    justify-content:space-between;
+    padding:16px 48px;/*space between the top of the page to the text and both side of the page to the text..eg padding-left:48px; padding-right:48px; padding-top:16px;*/
+    align-items: center;/*align nav header to the center top of the page based of padding amount listed above*/
+}
+#logo {
+    width:50px;/*image size*/
+    height:50px;/*image size*/
+    border:2px;/*the tickness of the border*/
+    border-style: solid;/*i can change this to dotted , double, dash, etc type of border style*/
+    border-color: red;
+    border-radius: 50px;/*the higher the px the rounder the border*/
+}
+.navbar {
+    display: flex;/*to separate the navbar items vertically*/
+    gap: 30px;/*the amount of space/gap between thr navbar items*/
+}
+.navbar a:link {
+    color :grey;/*color of text*/
+    text-decoration:none;/*remove underline and any decor of text*/
+}
+.navbar a:hover {
+    color:red;/*when cursor is on the items in the navbar, the text will change to red color*/
+}
+.active {
+    color: red !important;/*when code is run, the home navigation will be red*/
+}
+button {
+    font-size: 32px;/*size of the font text*/
+    padding: 8.5px 16px;/*space inside button*/
+    font-weight: bold;/*making text bold*/
+    color:white;/*color of text on the red background of the button*/
+    background: linear-gradient(to right, #c31432, #892211);/*color of the button*/
+    border-radius:10px;/*rounded edges of the button*/
+    cursor:pointer;
+    border:none;
+}
+button:hover {
+    background:white;/*color of button when cursor is hovering on the button*/
+    outline: 1px solid red;/*this means border: 1px; border-style:solid; border-color:red;*/
+    color: red;/*color of the text when the cursor hover on the button*/
+    border:none;
+}
+/*main body content*/
+.containerForBothSide {
+ /*this aligns all the content to be moved away from the edge of the screen, almost a little further passed the camera img*/   
+    max-width: 1400px;
+    margin: 32px auto;
+    padding: 0px 32px;
+   
+}
+.row {
+    display: grid;/*when you change this to flex instaed of grid, you will see the difference between grid and flex*/
+    grid-template-columns: 1fr 1fr; /*1FR = 1/3rd or 33.333% of the available space*/
+    align-items: center;
+}
+/*for the text*/
+.redText {
+    color: #c31432;
+    font-size: 20px;
+    margin-bottom: 6px;/*space between this text/content and the next text/content below*/
+}
+.largeText {
+    font-size:60px;
+    margin-bottom: 4px;/*space between this text/content and the next text/content below*/
+}
+.minText {
+    font-size: smaller;
+    opacity: 0.7;/*how faint or thick in clarity i want the text to be*/
+}
+/* for the phone img*/
+.phoneImg {
+    max-width: 100%;/*this sets the size of the phone to only 100% so that its not too large....remove this and see how large it could get without it*/
+}
+/*for the 4M users part*/
+.userDiv {
+    display: flex;/* arrange the pictures side by side s that i can use justify-content to remove the space in-between them..i do not want to remove the space between them, then i dont need this flex or the justify content*/
+    justify-content: left;/*it will remove the space between the pictures and align them left..the will become close to each other without space in-between*/
+}
+.users {
+    width:10px;/*image size*/
+    height:10px;/*image size*/
+    border:2px;/*the tickness of the border*/
+    border-style: solid;/*i can change this to dotted , double, dash, etc type of border style*/
+    border-color: red;
+    border-radius: 50px;/*the higher the px the rounder the border*/
+}
+/*for the learn button*/
+.learn {
+    margin-top: 40px;/*space between this text/content and the text/content above*/
+}
